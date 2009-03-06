@@ -1,8 +1,7 @@
-Demonstrating the impact of switching-off the JVM verifier
-----------------------------------------------------------
+h2. Demonstrating the impact of switching-off the JVM verifier
 
 This directory contains three scripts:
 
-compile.sh                  - compiles the source code into the bin directory
-create-rogue-tools.sh       - uses ASM to generate MemoryTools.class
-execute-with-rogue-tools.sh - executes the sample application with the rogue tools
+ * compile.sh                  - compiles the source code into the bin directory
+ * create-rogue-tools.sh       - uses ASM to generate MemoryTools.class
+ * execute-with-rogue-tools.sh - executes the sample application with the rogue tools
