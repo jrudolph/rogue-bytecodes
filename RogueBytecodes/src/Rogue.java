@@ -58,7 +58,7 @@ public class Rogue implements Opcodes {
 		{
 			/*
 			 * Read an integer from the memory of the process.
-			 * Use the Data class for this purpose. It's assumed memory structure (in x86)
+			 * Use the Data class for this purpose. Its assumed memory structure (in x86)
 			 * is like this:
 			 * structure Data{
 			 * 	 int32 hashcode; // offset 0
@@ -70,7 +70,7 @@ public class Rogue implements Opcodes {
 			 *   char *p;
 			 *   int x = *((int*)(p+8))
 			 * Therefore, to read an arbitrary memory position, 8 is subtracted from the
-			 * address and getfield(Data.x) called.  
+			 * address and getfield(Data.x) is called.  
 			 */
 			mv = cw.visitMethod(ACC_PUBLIC + ACC_STATIC, "readInt", "(I)I", null, null);
 			mv.visitCode();

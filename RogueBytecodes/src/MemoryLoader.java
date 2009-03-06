@@ -9,7 +9,7 @@ public class MemoryLoader {
 		ar[1] = (byte)((i>>8) & 0xff);
 		ar[0] = (byte)(i & 0xff);
 	}
-	
+
 	public static void main(String[] args) throws IOException {
 		Object o = new byte[]{
 				(byte)0xaa
@@ -22,11 +22,9 @@ public class MemoryLoader {
 		byte[] res = new byte[4];
 		
 		Object test = "das ist das haus des nikolaus".getBytes();
-		test.hashCode();
 		
 		int pos = MemoryTools.addressOfObject(test);
-		
-		for (int i=0;i<=0x30;i+=4){
+		for (int i=0;i<0x30;i+=4){
 			int2bytes(MemoryTools.readInt(pos+i),res);
 			System.out.write(res);
 		}
