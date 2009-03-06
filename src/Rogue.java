@@ -26,8 +26,6 @@ public class Rogue implements Opcodes {
 		
 		cw.visit(V1_5, ACC_PUBLIC + ACC_SUPER, "MemoryTools", null, "java/lang/Object", null);
 
-		cw.visitSource("MemoryTools.java", null);
-
 		{
 			mv = cw.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
 			mv.visitCode();
